@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+h1, h2, h3, p{
+    color: black;
+}
+a:hover {
+    opacity: 0.7;
+}
+body{
+    overflow-x: hidden;
+}
+hr{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+/*Header*/
+header {
+    position: fixed;
+    width: 100%;
+    background: #20504a;
+    height: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 2;
+}
+
+.logo {
+    font-size: 2vw;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    height: 60px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.a-menu{
+    font-size: 16px;
+}
+
+.a-login {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 0px;
+}
+
+.a-login:hover {
+        opacity: 0.7;
+    }
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+/*Main*/
+.atras_do_header_kskskssk{
+    height: 100px;
+}
+
+main{
+    width: 100%;
+}
+
+#titulo{
+    text-align: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    font-size: 100px;
+}
+#img-d{
+    background-color: #888888;
+    width: 100%;
+    height: 60vh;
+    background: url(https://images.unsplash.com/photo-1665464337648-a1736e366b62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1952&q=80);
+    background-size: cover;
+}
+.aba_pac{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.texto_pac{
+    float: left;
+    clear: both;
+    width: 25%;
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+#texto_pac2{
+    float: right;
+    clear: both;
+    margin-left: 0;
+    margin-right: 5%;
+}
+#texto_pac2 h2{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: #20504a;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+#li_pac2{
+    margin-left: 5%;
+}
+.texto_pac h2{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: #20504a;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+.aba_pac li{
+    width: 60%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    display: inline-block;
+}
+.aba_pac ul{
+    width: 30%;
+    height: 45vh;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    padding-bottom: 2.5%;
+    float: left;
+    background-color: #20504a;
+    border: #a0a0a0 solid 1px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 10px 18px #a0a0a0;
+}
+#sueg{
+    height: 53vh;
+}
+
+.naoimpo{
+    width: 100%;
+    overflow: hidden;
+}
+
+.naoimpo img{
+    height: 23vh;
+}
+
+.aba_pac img{
+    width: 100%;
+    transition: 1s;
+    overflow: hidden;
+}
+.aba_pac img:hover{
+    transform: scale(1.1);
+}
+.texto{
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.texto h3{
+    font-size: 18px;
+    color: white;
+    padding: 1%;
+}
+.texto p{
+    color: white;
+}
+.legenda_pac{
+    font-size: 12px;
+    padding: 2%;
+}
+#preço{
+    font-size: 18px;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-weight: bold;
+    float: left;
+    clear: both;
+}
+.avaliar{
+    font-size: 18px;
+    font-weight: bold;
+    width: 25%;
+    margin-top: 5%;
+    margin-right: 5%;
+    float: right;
+}
+.desconto{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 5%;
+    float: left;
+    clear: both;
+}
+.disponivel{
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    clear: both;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+/*Footer*/
+footer {
+    position: absolute;
+    background: #20504a;
+    width: 100%;
+    padding-top: 2.5%;
+}
+
+#infor div{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+#infor h1, p{
+    color: #fff;
+}
+.ul-footer{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.ul-footer li{
+    width: 20%;
+}
+.p1-f {
+    margin-right: 20%;
+}
+.p2-f{
+    margin-right: 20%;
+}
+
+.ul-footer li {
+    letter-spacing: 3px;
+}
+
+#direitos {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+#direitos p {
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    color: white;
+}
+#direitos2{
+    width: 100%;
+}
+
+#direitos2 ul{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+#direitos2 ul li {
+    display: inline-block;
+    width: 5%;
+}
+
+#direitos2 img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+/*KeyFrame*/
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*Media*/
+
+@media (max-width: 1019px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #20504a;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+/*Media*/
+@media (max-width:320px){
+    
+    /*Header*/
+    .logo{
+            font-size: 12px;
+    }
+    
+    /*Main*/
+    #titulo {
+        text-align: center;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+        font-size: 50px;
+    }
+    .texto_pac {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    .aba_pac li {
+        width: 100%;
+    }
+    .aba_pac ul {
+        width: 80%;
+        height: 55vh;
+        margin-left: 10%;
+    }
+    #texto_pac2{
+        float: left;
+        margin-left: 10%;
+    }
+    #li_pac2 {
+        margin-left: 0;
+    }
+    .legenda_pac {
+        font-size: 13px;
+        padding: 2%;
+    }
+
+    /*Footer*/
+    .ul-footer {
+        display: none;
+    }
+    #direitos2 ul li {
+        display: inline-block;
+        margin-top: 10%;
+        width: 35%;
+    }
+}
+
+@media (min-width: 321px) and (max-width:480px){
+    /*Header*/
+    .logo{
+        font-size: 20px;
+}
+
+/*Main*/
+#titulo {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 50px;
+}
+.texto_pac {
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+.aba_pac li {
+    width: 100%;
+}
+.aba_pac ul {
+    width: 80%;
+    height: 55vh;
+    margin-left: 10%;
+}
+
+#texto_pac2{
+    float: left;
+    margin-left: 10%;
+}
+#li_pac2 {
+    margin-left: 0;
+}
+#sueg{
+    height:65vh;
+}
+.legenda_pac {
+    font-size: 13px;
+    padding: 2%;
+}
+
+/*Footer*/
+.ul-footer {
+    display: none;
+}
+#direitos2 ul li {
+    display: inline-block;
+    margin-top: 10%;
+    width: 35%;
+}
+}
+
+@media (min-width:481px) and (max-width:768px){
+    #titulo {
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size: 50px;
+    }
+    .texto_pac {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    .aba_pac li {
+        width: 100%;
+    }
+    .aba_pac ul {
+        width: 60%;
+        height: 55vh;
+        margin-left: 20%;
+    }
+    #texto_pac2{
+        float: left;
+        margin-left: 10%;
+    }
+    #li_pac2 {
+        margin-left: 0;
+    }
+    #sueg{
+        height:65vh;
+    }
+    .legenda_pac {
+        font-size: 14px;
+        padding: 2%;
+    }
+    
+    /*Footer*/
+    .ul-footer {
+        display: none;
+    }
+    #direitos2 ul li {
+        display: inline-block;
+        margin-top: 10%;
+        width: 35%;
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    #titulo {
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 50px;
+    }
+    .texto_pac {
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 2.5%;
+    }
+    .aba_pac li {
+        width: 100%;
+    }
+    .aba_pac ul {
+        width: 30%;
+        height: 55vh;
+        margin-left: 2.5%;
+    }
+    #texto_pac2{
+        float: left;
+        margin-left: 5%;
+    }
+    #li_pac2 {
+        margin-left: 0;
+    }
+    #sueg{
+        height:60vh;
+    }
+    .legenda_pac {
+        font-size: 13px;
+        padding: 2%;
+    }
+    
+    /*Footer*/
+    
+    #direitos2 ul li {
+        display: inline-block;
+        margin-top: 10%;
+        width: 10%;
+    }
+}
+@media (min-width:1025px) and (max-width:1200px){
+    .texto_pac h2{
+        font-size: 20px;
+    }
+    #texto_pac2 h2{
+        font-size: 20px;
+    }
+    .aba_pac ul{
+        height: 55vh;
+    }
+    #sueg{
+        height:65vh;
+    }
+    .legenda_pac {
+        font-size: 13px;
+        padding: 2%;
+    }
+    /*Footer*/
+    
+    #direitos2 ul li {
+        display: inline-block;
+        margin-top: 2%;
+        width: 10%;
+    }
+}
+@media (max-width: 654px) {
+    .logo{
+        font-size: 3vw;
+    }
+}
